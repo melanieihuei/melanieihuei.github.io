@@ -191,7 +191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
 /* Skills */
 
 .services {
-   background: none repeat scroll 0 0 #4D4D4D;
+   background: none repeat scroll 0 0 #bfbfbf;
   padding: 50px 0;
   color: #eeeeee;
   width: 100%;
@@ -205,7 +205,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
 
 .service-item {
   margin-bottom: 15px;
-  background:#333333;
+  background:#40bfbf;
   padding:10px;
   border:1px solid #D1D1D1 !important;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
