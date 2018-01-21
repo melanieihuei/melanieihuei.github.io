@@ -87,7 +87,7 @@ border-radius:0px !important;
 }
 .navbar-new .navbar-nav > li > a:hover,
 .navbar-new .navbar-nav > li > a:focus {
-  background-color: rgba(192,192,192,0.3);
+  background-color: rgba(63, 191, 191, 0.57);
 }
 .navbar-new .navbar-toggle {
   border-color: #dddddd;
