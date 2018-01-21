@@ -198,9 +198,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
   border-bottom:1px solid #D1D1D1 !important;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
   *zoom: 1;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -webkit-box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
+     -moz-box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
+          box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
 }
 
 .service-item {
@@ -210,9 +210,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
   border:1px solid #D1D1D1 !important;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
   *zoom: 1;
-  -webkit-box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
-     -moz-box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
-          box-shadow: 0 1px 4px rgba(63, 191, 191, 0.57);
+  -webkit-box-shadow: 0 1px 4px rgba(192,192,192,0.3);
+     -moz-box-shadow: 0 1px 4px rgba(192,192,192,0.3);
+          box-shadow: 0 1px 4px rgba(192,192,192,0.3);
 }
 
 .active {
