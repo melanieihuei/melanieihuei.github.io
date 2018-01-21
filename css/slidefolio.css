@@ -308,7 +308,7 @@ img.placeholder {
 
 /* Overlay */
 .overlay {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(63, 191, 191, 0.57);
     border: 0 solid rgba(255, 255, 255, 0.2);
     bottom: 0;
     left: 0;
@@ -349,7 +349,7 @@ span.valign {
 
 /* Contact */
 #contact {
-background:none repeat scroll 0 0 rgba(0, 0, 0, 0.79);
+background:none repeat scroll 0 0 rgba(192,192,192,0.3);
 color:#f1f1f1;
 padding:50px 0;
 border-top:1px solid #D1D1D1 !important;
