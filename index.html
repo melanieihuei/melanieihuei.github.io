@@ -414,7 +414,7 @@
                       <font size="1.5" style="color: #707b7e">
                         <code>image segmentation</code><br>
                         <code>CNN</code><code>NMF</code><code>CNMF</code><br>
-                        <code>python</code><br>
+                        <code>python</code><code>Unet</code><br>
                       </font></p>
                     </div>
                   </div>
@@ -674,7 +674,27 @@
                     </h3>
                   </div>
                   <div class="modal-body">
-                    Project is processing, coming soon!
+                    <!-- hyperlinks -->
+                    <a href="https://github.com/melanieihuei/Neuron-Segmentation"><i class="fa fa-github fa-3x"></i></a>
+                    <!-- tools -->
+                    <p><br></p> Tools:
+                    <ul>
+                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
+                      <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
+                      <li><a href="https://github.com/jakeret/tf_unet" style="color: #f2958c">tf_unet</a></li>
+                      <li><a href="https://github.com/thunder-project/thunder-extraction" style="color: #f2958c">thunder-extraction</a></li>
+                      <li><a href="https://github.com/flatironinstitute/CaImAn" style="color: #f2958c">CaImAn</a></li>
+                    </ul>
+                    <!-- contents -->
+                    <p><br> Implemented Convolutional neural network (CNN), Non-negative matrix factorization (NMF),
+                      and Constrained non-negative matrix factorization (CNMF) to the neuron images and segmented the location of neurons.
+                      Resulted in 3.12 total scores based on the score system of <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">neuron-finders</a>.</p>
+                    <p>The project uses the time series image datasets of neurons from
+                      <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">CodeNeuro</a>.
+                      Each folder of training and testing images is a single plan, and the images are numbered according to their temporal ordering.
+                      We offered three different algorithms (CNN, NMF, CNMF) based on three different python packages (Unet, thunder-extraction, CaImAn)
+                      in our github repository. Compared various methods, the resulted best result is from the CNN model using tensorflow Unet.
+                    <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
                   </div>
                 </div>
               </div>
