@@ -1,876 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I-Huei (Melanie) Ho</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>I-Huei (Melanie) Ho</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Add custom CSS here -->
-    <link href="css/slidefolio.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-    <!-- Page Icon  -->
-    <link rel="shortcut icon" href="./img/umbrella.ico">
+<!-- Favicons -->
+<link rel="shortcut icon" href="img/umbrella.ico">
+<!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"> -->
 
-    <!-- images text align -->
-    <style>
-      .position {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 
-      .bottom-left {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-      }
 
-      .top-left {
-        position: absolute;
-        top: 8px;
-        left: 16px;
-      }
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-      .top-right {
-        position: absolute;
-        top: 8px;
-        right: 16px;
-      }
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-      .bottom-right {
-        position: absolute;
-        bottom: 20px;
-        left: 10px;
-      }
 
-      .bottm-centered {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+</head>
+<body>
+<!-- Navigation -->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">I-Huei (Melanie)</a> </div>
 
-      .centered {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="page-scroll"><i class="service-icon fa fa-home"></i>&nbsp;<b>Home</b></a></li>
+        <li><a href="#about-section" class="page-scroll"><i class="fa fa-user-circle"></i>&nbsp;<b>About</b></a></li>
+        <li><a href="#services-section" class="page-scroll"><i class="service-icon fa fa-cubes"></i>&nbsp;<b>Skills</b></a></li>
+        <li><a href="#works-section" class="page-scroll"><i class="service-icon fa fa-code"></i>&nbsp;<b>Projects</b></a></li>
+        <li><a href="#team-section" class="page-scroll"><i class="service-icon fa fa-book"></i>&nbsp;<b>Mateirals</b></a></li>
+        <li><a href="#contact-section"><i class="service-icon fa fa-envelope"></i>&nbsp;<b>Contact</b></a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
 
-      /* .centered {
-        position: absolute;
-        top: 20px;
-        left: 15px;
-      /* transform: translate(-50%, -50%);} */
-
-      p.small {
-        line-height: 13px;
-      }
-      p.medium {
-        line-height: 19px;
-      }
-      p.big {
-        line-height: 20px;
-      }
-
-    </style>
-	</head>
-  <body>
-
-    <!-- ***** Header Area ************************************************* -->
-    <div id="top" class="header">
-      <div class="vert-text" style="color: white";>
-	       <img class="img-rounded" alt="Company Logo" src="./img/index.png" height="120" width="120"/>
-         <h2 style="text-shadow: 1.5px 1.5px #6e6e70"><b>I-Huei Melanie Ho</b></h2>
-         <ul class="list-inline">
-           <li><a href="http://www.stat.uga.edu/people/ho-i-huei" style="text-shadow: 1.5px 1.5px #6e6e70"><i class="fa fa-link fa-2x"></i></li>
-           <li><a href="mailto:ihuei.ho25@uga.edu" style="text-shadow: 1.5px 1.5px #6e6e70"><i class="fa fa-envelope-o fa-2x"></i></li>
-	         <li><a href="https://www.linkedin.com/in/ihuei-ho/" style="text-shadow: 1.5px 1.5px #6e6e70"><i class="fa fa-linkedin fa-2x"></i></li>
-	         <li><a href="https://github.com/melanieihuei" style="text-shadow: 1.5px 1.5px #6e6e70"><i class="fa fa-github fa-2x"></i></li>
-         </ul>
-			   <br>
-			   <a href="#about" class="btn btn-top">Learn More</a>
+<!-- Header -->
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1>I-Huei <span class="color">Melanie</span> Ho</h1>
+    <p><b>A stat person who loves data science and travel.</b></p>
+    <ul class="list-inline">
+      <li><a href="http://www.stat.uga.edu/people/ho-i-huei"><i class="fa fa-link fa-2x"></i></li>
+      <li><a href="mailto:ihuei.ho25@uga.edu"><i class="fa fa-envelope-o fa-2x"></i></li>
+      <li><a href="https://www.linkedin.com/in/ihuei-ho/"><i class="fa fa-linkedin fa-2x"></i></li>
+      <li><a href="https://github.com/melanieihuei"><i class="fa fa-github fa-2x"></i></li>
+    </ul>
+    <br>
+    <div class="clearfix"></div>
+    <a href="#about-section" class="btn btn-default btn-lg page-scroll"><b>Learn More</b></a> </div>
+</header>
+<!-- About Section -->
+<div id="about-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About</h2>
+      <br>
+      <img class="img" alt="Logo" src="./img/index.png" height="180" width="180"/>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Who I am</h4> <br>
+        <p><b>I-Huei</b>, also <b>Melanie</b>.<br>
+        A second year master student at UGA major in STAT but working on both Statistics and Data Science. <br>
+        An R and Python user, STAT for R, DS for Python, is struggling to betray R to Python recently.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>What I Do</h4> <br>
+        <p><b>50% of data analysis, 50% of data science.</b> <br>
+          Strong interest in natural language processing, especially want to apply deep learning methods to it. <br>
+        Experience on image processing (HOG, NMF, CNMF) and natural language processing (Naive Bayes, Logistic Regression, Random Forest). <br>
+        Used numpy, scikit-learn, nltk, OpenCV. Really wants to spend more time on tensorflow.
+        Recently working on web traffic dataset and applying time series models.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>What else</h4> <br>
+        <p>A <b>RICEAHOLIC</b>, but also loves ramen and Camembert. <br>
+          MacBook Pro Retina 13 and Atom user. Worships Magsafe2 and enjoys the keyboard sounds while typing.
+          Recently addicted to the "keyboard-sounds" package in Atom.
+          (<a href="https://atom.io/packages/keyboard-sounds">Try here.</a>)<br>
+          Wishes to have 48 hours a day. Loves coding, eating, and traveling.
+        </p>
       </div>
     </div>
-    <!-- ***** /Header Area ************************************************ -->
-
-    <!-- ***** Navigation ************************************************** -->
-	  <div id="nav">
-    <nav class="navbar navbar-new" role="navigation">
-      <div class="container">
-
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-	      <a href="#" class="navbar-brand">I-Huei (Melanie)</a>
-      </div>
-      <div class="collapse navbar-collapse" id="mobilemenu">
-        <ul class="nav navbar-nav navbar-right text-center">
-	         <li><a href="#top"><i class="service-icon fa fa-home"></i>&nbsp;Home</a></li>
-           <li><a href="#about"><i class="fa fa-user-circle"></i>&nbsp;About</a></li>
-           <li><a href="#skills"><i class="service-icon fa fa-file-text"></i>&nbsp;Skills</a></li>
-           <li><a href="#projects"><i class="service-icon fa fa-camera"></i>&nbsp;Projects</a></li>
-           <li><a href="mailto:ihuei.ho25@uga.edu"><i class="service-icon fa fa-envelope"></i>&nbsp;Contact</a></li>
-        </ul>
-      </div> <!-- /.navbar-collapse -->
-      </div>
-    </nav>
+  </div>
+</div>
+<!-- Skills Section -->
+<div id="services-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <hr>
     </div>
-    <!-- ***** /Navigation ************************************************* -->
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bar-chart"></i>
+        <h4>Statistics</h4>
+        <p>Generalized Linear Model, Mixed Effect Model, Time Series Model,
+        Principal Component Analysis, Non-negative Matrix Factorization,
+        Statistical Programming, Statistical Consultation</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-flask"></i>
+        <h4>Data Science</h4>
+        <p>Machine Learning, Data Mining, Natural Language Processing,
+        Text Mining, Image Processing, Image Segmentation, Automatic Differentiation</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-code"></i>
+        <h4>Programming</h4>
+        <p><b>R</b>, <b>Python</b>, SQL, Pyspark, SAS, Microsoft Excel, SPSS, Google Cloud Computing Engine</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-globe"></i>
+        <h4>Languages</h4>
+        <p>Mandarin Chinese, English, Japanese</p>
+      </div>
+    </div>
+    <div class="space"></div>
+  </div>
+</div>
+<!-- Projects Section -->
+<div id="works-section">
+  <div class="container"> <!-- Container -->
+    <div class="section-title">
+      <h2>Projects</h2>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Data Analysis</a></li>
+            <li><a href="#" data-filter=".app">Data Science</a></li>
+            <!-- <li><a href="#" data-filter=".branding">Branding</a></li> -->
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+<!-- ####################################################################### -->
+        <!-- <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <a data-toggle="modal" data-target="#stat1" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h3>Serious Genetic Disease Investigation</h3>
+                <small>May, 2017</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/portfolio/p001.png" class="img-responsive" alt="Serious Genetic Disease Investigation"></div>
 
-    <!-- ***** About ******************************************************* -->
-    <div id="about" class="about_us">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 divice">
-            <img class="img-responsive" src="img/aboutme.jpg" title="divice" height="1200" width="576"/>
-	        </div>
-          <div class="col-md-6 divice-info" >
-            <h1 style="color: #f2958c">About Me</h1>
-		        <br>
-		          <p style="color: #707b7e"><font size="3">
-                Hi there! This is I-Huei, but feel free to call me Melanie.
-                I am now a second year master student in statistics at University of Georgia and will graduate in May 2018.
-              </font></p>
-		          <p style="color: #707b7e"><font size="3">
-                I have a strong background in statistics, but also a strong interest in data science especially natural languae processing.
-                Besides establishing various linear models in regression data and categorical data,
-                I also implemented several machine learning algorithms (HOG, SVM, Naive Bayes, CNMF etc.) to the classification data.
-                Scroll down to <a href="#projects" style="color: #f2958c">projects</a> section to see my previous researchs on
-                malware classification and neuron segmentation, the different kinds of algorithms I tried on them brought out different interesting results!
-                Otherwise, inspired by the time series images for neuron segmentation project,
-                I am currently working on another time series dataset about web traffic of Wikipedia website and trying to implement ARIMA model on the data.
-              </font></p>
-		          <p style="color: #707b7e"><font size="3">
-                I am a big fan of traveling and enjoying new foods.
-                Please don't hesitate to contact me to talk more about foods, secret spots, or DATA!
-                You can reach me by following three ways:
-              </font></p>
-	            </div>
           </div>
-          <div class = "text-center">
-            <br><br>
-            <p style="color: #707b7e"><font size="3"><i class="fa fa-envelope-o fa-1x"></i>
-              Email: <a href="mailto:ihuei.ho25@uga.edu" style="color: #f2958c">ihuei.ho25@uga.edu</a>
-            </font></p>
-            <p style="color: #707b7e"><font size="3"><i class="fa fa-github fa-1x"></i>
-              Github: <a href="https://github.com/melanieihuei" style="color: #f2958c">https://github.com/melanieihuei</a>
-            </font></p>
-            <p style="color: #707b7e"><font size="3"><i class="fa fa-linkedin fa-1x"></i>
-              Linkedin: <a href="https://www.linkedin.com/in/i-huei-ho-100819126/" style="color: #f2958c">https://www.linkedin.com/in/ihuei-ho/</a>
-            </font></p>
-            <!--Linkedin Badger -->
-            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-            <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ihuei-ho" data-format="inline" data-related="false"></script>
+                      </a>
+        </div> -->
+<!-- ####################################################################### -->
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <a data-toggle="modal" data-target="#stat1" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/01.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Serious Genetic Disease Investigation</h3>
+                <small>May, 2017</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj1.png" class="img-responsive" alt="Serious Genetic Disease Investigation"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <a data-toggle="modal" data-target="#stat2" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/02.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Capuchins Competence Level</h3>
+                <small>Jan, 2017 - Apr, 2017</small>
+                <div class="clearfix"></div>
+              </div>
+            <img src="img/projects/pj2.png" class="img-responsive" alt="Capuchins Competence Level"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds1" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/03.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Automatic Emotion Detection</h3>
+                <small>Aug, 2017 - Dec, 2017</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj3.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds2" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/04.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Document Word Counter</h3>
+                <small>Jan, 2018</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj4.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds3" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/05.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Scalable Document Classification</h3>
+                <small>Jan, 2018 - Feb, 2018</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj5.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds4" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/06.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Malware Classification</h3>
+                <small>Feb, 2018</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj6.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds5" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/07.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Neuron Segmentation</h3>
+                <small>Feb, 2018 - Mar, 2018</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj7.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds6" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/08.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Ciliary Motion Extraction</h3>
+                <small>Mar, 2018 - Apr, 2018</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj8.png" class="img-responsive" alt="Project Title"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <a data-toggle="modal" data-target="#ds7" href="#">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <!-- <a href="img/portfolio/08.jpg" rel="prettyPhoto"> -->
+              <div class="hover-text">
+                <h3>Web Traffic of Wikipedia Website</h3>
+                <small>Jan, 2018 - Present</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj9.png" class="img-responsive" alt="Project Title"></div>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08.jpg" rel="prettyPhoto">
+              <div class="hover-text">
+                <h3>Web Traffic of Wikipedia Website</h3>
+                <small>Jan, 2018 - Present</small>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/projects/pj9.png" class="img-responsive" alt="Project Title"> </a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Project Details in Modal -->
+        <!-- ***** Project 1 ******************************************* -->
+        <div class="modal fade" id="stat1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close"/></button>
+                <h3 class="modal-title">
+                  Serious Genetic Disease Investigation
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="projects/GSD Screening.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p>Tools:
+                <ul>
+                  <li><a href="https://www.r-project.org/" style="color: #f2958c">R</a> (ggplot2)</li>
+                </ul>
+                <!-- contents -->
+                <p><br>Established the predictive model for presaging the probability of having serious genetic disease based on personal blood test and background.</p>
+                <p>According to the raw data we had, utilized CART in filling missing values in blood tests reults
+                  (especially for blood test 3 and blood test 4),
+                  and applied principal component analysis to detect collinearity.</p>
+                <p>Click the pdf icon above, or scroll down to the file, or contact me to go deeper in this project!<br><br></p>
+                <embed src="projects/GSD Screening.pdf" width="500px" height="700px" align="center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 2 ******************************************* -->
+        <div class="modal fade" id="stat2" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Competence Level of Capuchins
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- tools -->
+                <p><br></p>Tools:
+                <ul>
+                  <li><a href="https://www.r-project.org/" style="color: #f2958c">R</a> (ggplot2)</li>
+                </ul>
+                <!-- contents -->
+                <p><br>Coming soon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 3 ******************************************* -->
+        <div class="modal fade" id="ds1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Automatic Emotion Detection in Images Data
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="projects/Automatic Emotion Detection.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
+                <a href="coming/soon"><i class="fa fa-github fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p>Tools:
+                <ul>
+                  <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a> (numpy, tensorflow, keras, OpenCV, dlib, skimage)</li>
+                </ul>
+                <!-- contents -->
+                <p><br>Applied CNN and HOG+SVM in detecting human emotions and compared the accuracy.</p>
+                <p>By using CNN, the resulting model with two convolutional layers and full landmarks were processed in keras
+                  by inputting images into the convolutional neural network and guiding CNN by normalized landmarks.</p>
+                <p>By using HOG+SVM, detected facial features by extracting the histogram of oriented gradients feature descriptors
+                  and classified by using support vector machine.</p>
+                <p>Click the pdf icon above, or scroll down to the file, or contact me to go deeper in this project!
+                  It's github is coming soon!<br><br></p>
+                <embed src="projects/Automatic Emotion Detection.pdf" width="500px" height="700px" align="center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 4 ******************************************* -->
+        <div class="modal fade" id="ds2" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Document Word Counter
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="https://github.com/melanieihuei/word-counter-in-Apache-Spark"><i class="fa fa-github fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p> Tools:
+                <ul>
+                  <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
+                  <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
+                  <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
+                  <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
+                </ul>
+                <!-- contents -->
+                <p><br> Implemented a basic word counter in Apache Spark and resulted in a customized word-count dictionary.</p>
+                <p>According to the books inputted, the word counter will detect the words, record the corresponding counts,
+                  elminate the stopwords, filter out the punctuations, and provide the top n most frequent words in a dictionary.
+                  Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top t words with highest TF-IDF scores.</p>
+                <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 5 ******************************************* -->
+        <div class="modal fade" id="ds3" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Scalable Document Classification
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="https://github.com/melanieihuei/Scalable-Document-Classification"><i class="fa fa-github fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p> Tools:
+                <ul>
+                  <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
+                  <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
+                  <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
+                  <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
+                  <li><a href="https://cloud.google.com/" style="color: #f2958c">Google Cloud Platform</a></li>
+                </ul>
+                <!-- contents -->
+                <p><br> Implemented Naive Bayes classifier on Apache Spark and resulted in 94.52% classification accuracy in large dataset.</p>
+                <p>The project uses Reuters Corpus but only specifies four categories that end with CAT.
+                  We applied several preprocessing skills like removing punctuations, words stemming, and removing stopwords.
+                  The Naive Bayes classifier is also implemented with Laplace smoothing to avoid zero count problems. </p>
+                <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 6 ******************************************* -->
+        <div class="modal fade" id="ds4" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Malware Classification
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="https://github.com/melanieihuei/Malware-Classification"><i class="fa fa-github fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p> Tools:
+                <ul>
+                  <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
+                  <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
+                  <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
+                  <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
+                  <li><a href="https://cloud.google.com/" style="color: #f2958c">Google Cloud Platform</a></li>
+                </ul>
+                <!-- contents -->
+                <p><br> Implemented Random Forest classifier on malware classification via Apache Spark and processing on google cloud platform.
+                  Resulted in 98.97% classification accuracy in large dataset.</p>
+                <p>The project uses the hexadecimal binaries as documents, and classify them into one of several possible malware families.
+                  The dataset is from <a href="https://www.kaggle.com/c/malware-classification/" style="color: #f2958c">Microsoft Malware Classification Challenge</a>.
+                  We have extracted seven different features from both asm and bytes files,
+                  and resulted in including unigram bytes from bytes file and segment count from asm files in our final classifier.</p>
+                <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 7 ******************************************* -->
+        <div class="modal fade" id="ds5" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Neuron Segmentation
+                </h3>
+              </div>
+              <div class="modal-body">
+                <!-- hyperlinks -->
+                <a href="https://github.com/melanieihuei/Neuron-Segmentation"><i class="fa fa-github fa-3x"></i></a>
+                <!-- tools -->
+                <p><br></p> Tools:
+                <ul>
+                  <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
+                  <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
+                  <li><a href="https://github.com/jakeret/tf_unet" style="color: #f2958c">tf_unet</a></li>
+                  <li><a href="https://github.com/thunder-project/thunder-extraction" style="color: #f2958c">thunder-extraction</a></li>
+                  <li><a href="https://github.com/flatironinstitute/CaImAn" style="color: #f2958c">CaImAn</a></li>
+                </ul>
+                <!-- contents -->
+                <p><br> Implemented Convolutional neural network (CNN), Non-negative matrix factorization (NMF),
+                  and Constrained non-negative matrix factorization (CNMF) to the neuron images and segmented the location of neurons.
+                  Resulted in 3.12 total scores based on the score system of <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">neuron-finders</a>.</p>
+                <p>The project uses the time series image datasets of neurons from
+                  <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">CodeNeuro</a>.
+                  Each folder of training and testing images is a single plan, and the images are numbered according to their temporal ordering.
+                  We offered three different algorithms (CNN, NMF, CNMF) based on three different python packages (Unet, thunder-extraction, CaImAn)
+                  in our github repository. Compared various methods, the resulted best result is from the CNN model using tensorflow Unet.
+                <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 8 ******************************************* -->
+        <div class="modal fade" id="ds6" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Cilia Segmentation
+                </h3>
+              </div>
+              <div class="modal-body">
+                Project is processing, coming soon!
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+        <!-- ***** Project 9 ******************************************* -->
+        <div class="modal fade" id="ds7" tabindex="-1" role="dialog"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
+                <h3 class="modal-title">
+                  Web Traffic Time Series Forecasting
+                </h3>
+              </div>
+              <div class="modal-body">
+                Project is processing, coming soon!
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *********************************************************** -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Photo Credits -->
+<!-- project1 -->
+<!-- http://ortoday.com/what-to-do-when-blood-test-results-are-not-quite-normal/ -->
+<!-- project2 -->
+<!-- http://www.6aprile.it/featured/2011/02/25/il-terremoto-in-nuova-zelanda-colpa-dei-gay-e-delle-donne.html -->
+<!-- project4 -->
+<!-- https://dribbble.com/shots/3467471-DailyUI-004-Calculator -->
+<!-- project5 -->
+<!-- http://www.jmillercoaching.com/shop/ -->
+<!-- project6 -->
+<!-- https://finance.yahoo.com/news/report-one-in-five-android-apps-is-malware-117202610899.html -->
+<!-- project8 -->
+<!-- http://www.cellimagelibrary.org/images/11618 -->
+<!-- project9 -->
+<!-- http://freedesignfile.com/120406-modern-traffic-jam-vector-design-04/ -->
+
+<!-- Materials Section -->
+<div id="team-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Materials</h2>
+      <hr><br>
+      <p>Holds lectures and workshops at department of Sociology.</p>
+    </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail">
+          <a href="https://melanieihuei.github.io/soci6630/" class="hvr-bubble-float-bottom">
+          <img src="img/materials1.png" alt="..." class="team-img">
+          <span class="overlay"><span class="valign"></span>
+            <i class="fa fa-paper-plane fa-2x" style="color:#ffffff"></i>
+          </span></a>
+          <div class="caption">
+            <h3>R sources for SOCI6630</h3>
+            <p>Course website for SOCI6630 at department of Sociology.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- ***** /About ****************************************************** -->
-
-    <!-- ***** Skills ****************************************************** -->
-    <div id="skills" class="services">
-      <div class="container" style="color: #16AAC0">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h1>Skills</h1>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Statistics -->
-          <div class="col-md-4 text-center">
-            <div class="service-item" style="color: #eeeeee">
-              <i class="fa fa-bar-chart fa-3x"></i>
-              <h4>Statistics</h4>
-              <p>Data Analysis, Linear Model, Multivariate Analysis, Mathematical Statistics,
-                Categorical Analysis, Statistical Consultation, Statistical Programming, Time Series</p>
-            </div>
-          </div>
-          <!-- Data Science -->
-          <div class="col-md-4 text-center">
-            <div class="service-item" style="color: #eeeeee">
-	             <i class="fa fa-code fa-3x"></i>
-              <h4>Data Science</h4>
-              <p>Document Classification, Data Mining, Natural Language Processing, Machine Learning,
-                Deep Learning, Neural Network, Linear Dynamical Systems, Automatic Differentiation</p>
-            </div>
-          </div>
-          <!-- Language -->
-          <div class="col-md-4 text-center">
-            <div class="service-item" style="color: #eeeeee">
-              <i class="fa fa-commenting fa-3x"></i>
-              <h4>Language</h4>
-              <p>English, Chinese, Taiwanese, Japanese</p>
-              <p>R, Python, SQL, Apache Spark, SAS, Microsoft Excel, SPSS, Weka, </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ***** /Skills ***************************************************** -->
-
-    <!-- ***** Projects **************************************************** -->
-    <div id="projects" class="portfolio">
-      <div class="container">
-
-        <!-- Selection Bottons -->
-        <div class="row push50">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h1 style="color: #f2958c">
-              Projects
-            </h1>
-            <h4>
-              <span class="filter label label-default" data-filter="all">ALL</span>
-              <span class="filter label label-default" data-filter="bw">Statistics</span>
-              <span class="filter label label-default" data-filter="nature">Data Science</span>
-            </h4>
-            <hr>
-          </div>
-        </div>
-
-        <!-- Project Details -->
-        <div class="row">
-          <div class="gallery">
-
-            <!-- Project Lists -->
-            <ul id="Grid" class="gcontainer">
-              <!-- ***** Project 1 ***************************************** -->
-              <!-- Blue Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix bw portraits" data-cat="bw">
-                <a data-toggle="modal" data-target="#stat1" class="mix-cover">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid9.png" alt="placeholder" style="opacity: 0.9">
-                    <div class="centered" style="color: #ffffff" >
-                      <p class="medium"><font size="5.5">
-                        <b>Serious Genetic Disease Investigation</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>May, 2017</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>Data Analysis</code><code>Time Series</code><br>
-                        <code>Stepwise Procedure</code><code>R</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 2 ***************************************** -->
-              <!-- Gray Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix bw portraits" data-cat="bw">
-                <a data-toggle="modal" data-target="#stat2" class="mix-cover">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid8.png" alt="placeholder" style="opacity: 0.23">
-                    <div class="centered" style="color: #f2958c" >
-                      <p class="medium"><font size="5.5">
-                        <b>Capuchins Competence Level</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Jan, 2017 - Apr, 2017</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>Data Analysis</code><code>Statistics</code><br>
-                        <code>Logistic Regression</code><code>R</code><br>
-                        <code>Mixed Effect Model</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 3 ***************************************** -->
-              <!-- Blue Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds1" class="mix-cover">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid9.png" alt="placeholder" style="opacity: 0.9">
-                    <div class="centered" style="color: #ffffff" >
-                      <p class="medium"><font size="5.5">
-                        <b>Automatic Emotion Detection</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Aug, 2017 - Dec, 2017</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>Deep Learning</code><code>CNN</code><code>HOG</code><br>
-                        <code>SVM</code><code>python</code><code>keras</code><code>OpenCV</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 4 ***************************************** -->
-              <!-- Gray Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds2" class="mix-cover">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid8.png" alt="placeholder" style="opacity: 0.23">
-                    <div class="centered" style="color: #f2958c" >
-                      <p class="medium"><font size="5.5">
-                        <b>Document Word Counter</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Jan, 2018</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>Natural Language Processing</code><br>
-                        <code>TF-IDF</code><code>data science</code><br>
-                        <code>python</code><code>apache spark</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 5 ***************************************** -->
-              <!-- Blue Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds3" class="mix-cover green">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid9.png" alt="placeholder" style="opacity: 0.9">
-                    <div class="centered" style="color: #ffffff" >
-                      <p class="medium"><font size="5.5">
-                        <b>Scalable Document Classification</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Jan, 2018 - Feb, 2018</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>document classification</code><br>
-                        <code>Naive Bayes classifier</code><br>
-                        <code>python</code><code>apache spark</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 6 ***************************************** -->
-              <!-- Gray Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds4" class="mix-cover green">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid8.png" alt="placeholder" style="opacity: 0.23">
-                    <div class="centered" style="color: #f2958c" >
-                      <p class="medium"><font size="5.5">
-                        <b>Malware Classification</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Feb, 2018</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>malware classification</code><br>
-                        <code>random forest classifier</code><br>
-                        <code>python</code><code>apache spark</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 7 ***************************************** -->
-              <!-- Blue Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds5" class="mix-cover green">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid9.png" alt="placeholder" style="opacity: 0.9">
-                    <div class="centered" style="color: #ffffff" >
-                      <p class="medium"><font size="5.5">
-                        <b>Neuron Segmentation</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Feb, 2018 - Mar, 2018</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>image segmentation</code><br>
-                        <code>CNN</code><code>NMF</code><code>CNMF</code><br>
-                        <code>python</code><code>Unet</code><br>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 8 ***************************************** -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds6" class="mix-cover green">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid8.png" alt="placeholder" style="opacity: 0.23">
-                    <div class="centered" style="color: #f2958c" >
-                      <p class="medium"><font size="5.5">
-                        <b>Cilia Segmentation</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Mar, 2018 - </b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>image segmentation</code><br>
-                        <code>CNN</code><code>HOG</code><code>SVM</code><br>
-                        <code>python</code>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-              <!-- ********************************************************* -->
-              <!-- ***** Project 9 ***************************************** -->
-              <!-- Blue Background -->
-              <li class="col-md-4 col-sm-4 col-xs-12 mix nature portraits" data-cat="nature">
-                <a data-toggle="modal" data-target="#ds7" class="mix-cover green">
-                  <div class="position">
-                    <img class="horizontal" src="img/grid9.png" alt="placeholder" style="opacity: 0.9">
-                    <div class="centered" style="color: #ffffff" >
-                      <p class="medium"><font size="5.5">
-                        <b>Web Traffic Time Series Forecasting</b>
-                      </font></p>
-                      <p class="small" style="color: #707b7e"><font size="2">
-                        <b>Feb, 2018 - Present</b>
-                      </font><br>
-                      <font size="1.5" style="color: #707b7e">
-                        <code>time series</code><br>
-                        <code>hierarchical modeling</code><br>
-                        <code>python</code><code>apache spark</code><br>
-                      </font></p>
-                    </div>
-                  </div>
-                  <span class="overlay"><span class="valign"></span><span class="title">
-                    <i class="fa fa-paper-plane fa-2x"></i>
-                  </span></span>
-                </a>
-              </li>
-            </ul>
-
-            <!-- Project Details in Modal -->
-            <!-- ***** Project 1 ******************************************* -->
-            <div class="modal fade" id="stat1" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close"/></button>
-                    <h3 class="modal-title">
-                      Serious Genetic Disease Investigation
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="projects/GSD Screening.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p>Tools:
-                    <ul>
-                      <li><a href="https://www.r-project.org/" style="color: #f2958c">R</a> (ggplot2)</li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br>Established the predictive model for presaging the probability of having serious genetic disease based on personal blood test and background.</p>
-                    <p>According to the raw data we had, utilized CART in filling missing values in blood tests reults
-                      (especially for blood test 3 and blood test 4),
-                      and applied principal component analysis to detect collinearity.</p>
-                    <p>Click the pdf icon above, or scroll down to the file, or contact me to go deeper in this project!<br><br></p>
-                    <embed src="projects/GSD Screening.pdf" width="500px" height="700px" align="center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 2 ******************************************* -->
-            <div class="modal fade" id="stat2" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Competence Level of Capuchins
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- tools -->
-                    <p><br></p>Tools:
-                    <ul>
-                      <li><a href="https://www.r-project.org/" style="color: #f2958c">R</a> (ggplot2)</li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br>Coming soon!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 3 ******************************************* -->
-            <div class="modal fade" id="ds1" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Automatic Emotion Detection in Images Data
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="projects/Automatic Emotion Detection.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
-                    <a href="coming/soon"><i class="fa fa-github fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p>Tools:
-                    <ul>
-                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a> (numpy, tensorflow, keras, OpenCV, dlib, skimage)</li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br>Applied CNN and HOG+SVM in detecting human emotions and compared the accuracy.</p>
-                    <p>By using CNN, the resulting model with two convolutional layers and full landmarks were processed in keras
-                      by inputting images into the convolutional neural network and guiding CNN by normalized landmarks.</p>
-                    <p>By using HOG+SVM, detected facial features by extracting the histogram of oriented gradients feature descriptors
-                      and classified by using support vector machine.</p>
-                    <p>Click the pdf icon above, or scroll down to the file, or contact me to go deeper in this project!
-                      It's github is coming soon!<br><br></p>
-                    <embed src="projects/Automatic Emotion Detection.pdf" width="500px" height="700px" align="center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 4 ******************************************* -->
-            <div class="modal fade" id="ds2" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Document Word Counter
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="https://github.com/melanieihuei/word-counter-in-Apache-Spark"><i class="fa fa-github fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p> Tools:
-                    <ul>
-                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
-                      <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
-                      <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
-                      <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br> Implemented a basic word counter in Apache Spark and resulted in a customized word-count dictionary.</p>
-                    <p>According to the books inputted, the word counter will detect the words, record the corresponding counts,
-                      elminate the stopwords, filter out the punctuations, and provide the top n most frequent words in a dictionary.
-                      Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top t words with highest TF-IDF scores.</p>
-                    <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 5 ******************************************* -->
-            <div class="modal fade" id="ds3" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Scalable Document Classification
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="https://github.com/melanieihuei/Scalable-Document-Classification"><i class="fa fa-github fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p> Tools:
-                    <ul>
-                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
-                      <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
-                      <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
-                      <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
-                      <li><a href="https://cloud.google.com/" style="color: #f2958c">Google Cloud Platform</a></li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br> Implemented Naive Bayes classifier on Apache Spark and resulted in 94.52% classification accuracy in large dataset.</p>
-                    <p>The project uses Reuters Corpus but only specifies four categories that end with CAT.
-                      We applied several preprocessing skills like removing punctuations, words stemming, and removing stopwords.
-                      The Naive Bayes classifier is also implemented with Laplace smoothing to avoid zero count problems. </p>
-                    <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 6 ******************************************* -->
-            <div class="modal fade" id="ds4" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Malware Classification
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="https://github.com/melanieihuei/Malware-Classification"><i class="fa fa-github fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p> Tools:
-                    <ul>
-                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
-                      <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
-                      <li><a href="http://spark.apache.org/" style="color: #f2958c">Apache Spark 2.2.1</a></li>
-                      <li><a href="https://pypi.python.org/pypi/pyspark/2.2.1" style="color: #f2958c">Pyspark 2.2.1</a></li>
-                      <li><a href="https://cloud.google.com/" style="color: #f2958c">Google Cloud Platform</a></li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br> Implemented Random Forest classifier on malware classification via Apache Spark and processing on google cloud platform.
-                      Resulted in 98.97% classification accuracy in large dataset.</p>
-                    <p>The project uses the hexadecimal binaries as documents, and classify them into one of several possible malware families.
-                      The dataset is from <a href="https://www.kaggle.com/c/malware-classification/" style="color: #f2958c">Microsoft Malware Classification Challenge</a>.
-                      We have extracted seven different features from both asm and bytes files,
-                      and resulted in including unigram bytes from bytes file and segment count from asm files in our final classifier.</p>
-                    <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 7 ******************************************* -->
-            <div class="modal fade" id="ds5" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Neuron Segmentation
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <!-- hyperlinks -->
-                    <a href="https://github.com/melanieihuei/Neuron-Segmentation"><i class="fa fa-github fa-3x"></i></a>
-                    <!-- tools -->
-                    <p><br></p> Tools:
-                    <ul>
-                      <li><a href="https://www.python.org/downloads/release/python-360/" style="color: #f2958c">Python 3.6</a></li>
-                      <li><a href="https://www.anaconda.com/" style="color: #f2958c">Anaconda</a></li>
-                      <li><a href="https://github.com/jakeret/tf_unet" style="color: #f2958c">tf_unet</a></li>
-                      <li><a href="https://github.com/thunder-project/thunder-extraction" style="color: #f2958c">thunder-extraction</a></li>
-                      <li><a href="https://github.com/flatironinstitute/CaImAn" style="color: #f2958c">CaImAn</a></li>
-                    </ul>
-                    <!-- contents -->
-                    <p><br> Implemented Convolutional neural network (CNN), Non-negative matrix factorization (NMF),
-                      and Constrained non-negative matrix factorization (CNMF) to the neuron images and segmented the location of neurons.
-                      Resulted in 3.12 total scores based on the score system of <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">neuron-finders</a>.</p>
-                    <p>The project uses the time series image datasets of neurons from
-                      <a href="http://neurofinder.codeneuro.org/" style="color: #f2958c">CodeNeuro</a>.
-                      Each folder of training and testing images is a single plan, and the images are numbered according to their temporal ordering.
-                      We offered three different algorithms (CNN, NMF, CNMF) based on three different python packages (Unet, thunder-extraction, CaImAn)
-                      in our github repository. Compared various methods, the resulted best result is from the CNN model using tensorflow Unet.
-                    <p>Click the github icon above or contact me to go deeper in this project! <br><br></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 8 ******************************************* -->
-            <div class="modal fade" id="ds6" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Cilia Segmentation
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    Project is processing, coming soon!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- *********************************************************** -->
-            <!-- ***** Project 9 ******************************************* -->
-            <div class="modal fade" id="ds7" tabindex="-1" role="dialog"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" title="close" /></button>
-                    <h3 class="modal-title">
-                      Web Traffic Time Series Forecasting
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    Project is processing, coming soon!
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail">
+          <a href="https://melanieihuei.github.io/R-workshops/" class="hvr-bubble-float-bottom">
+          <img src="img/materials2.png" alt="..." class="team-img">
+          <span class="overlay"><span class="valign"></span>
+            <i class="fa fa-paper-plane fa-2x" style="color:#ffffff"></i>
+          </span></a>
+          <div class="caption">
+            <h3>R workshops</h3>
+            <p>Materials for two R workshops at department of Sociology.</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- ***** /Projects *************************************************** -->
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact-section">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact</h2>
+      <hr>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-inline">
+        <li><a href="http://www.stat.uga.edu/people/ho-i-huei" class="hvr-push"><i class="fa fa-link fa-2x"></a></i></li>
+        <li><a href="mailto:ihuei.ho25@uga.edu" class="hvr-push"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ihuei-ho/" class="hvr-push"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://github.com/melanieihuei" class="hvr-push"><i class="fa fa-github fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div id="footer">
+  <div class="container">
+    <p>Copyright &copy; Melanie Ho 2018. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+  </div>
+</div>
 
-    <!-- ***** Contact ***************************************************** -->
-    <!-- <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center" style="color: #6e6e70">
-            <h2>Contact Me</h2>
-            <hr>
-          </div>
-          <div class="col-md-5 col-md-offset-3">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
 
-            <form action="contact" id="contact-form" class="form-horizontal">
-              <fieldset>
-                <div class="form-group" >
-                  <label class="col-sm-4 control-label" for="name">
-                    Your Name
-                  </label>
-                  <div class="col-sm-8">
-                    <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-						      </div>
-						    </div>
-						    <div class="form-group" >
-						      <label class="col-sm-4 control-label" for="email">
-                    Your email
-                  </label>
-						      <div class="col-sm-8">
-						        <input type="text" placeholder="Enter Your Email Address" class="form-control" name="email" id="email">
-						      </div>
-						    </div>
-						    <div class="form-group">
-						      <label class="col-sm-4 control-label" for="subject">
-                    Subject
-                  </label>
-						      <div class="col-sm-8">
-						        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-						      </div>
-						    </div>
-						    <div class="form-group">
-						      <label class="col-sm-4 control-label" for="message">
-                    Your Message
-                  </label>
-						      <div class="col-sm-8">
-						        <textarea placeholder="Please Type Your Message" class="form-control" name="message" id="message" rows="3"></textarea>
-						      </div>
-						    </div>
-	              <div class="col-sm-offset-4 col-sm-8" >
-			            <button type="submit" class="btn btn-success">Submit</button>
-	    			      <button type="reset" class="btn btn-primary">Cancel</button>
-	        			</div>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- ***** /Contact **************************************************** -->
 
-    <!-- ***** Footer ****************************************************** -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-           <em>Copyright &copy; Melanie Ho 2017 | Design by Surfmandu</em>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ***** /Footer ***************************************************** -->
-
-    <!-- ***** Bootstrap core JavaScript *********************************** -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-scrolltofixed-min.js"></script>
-    <script src="js/jquery.vegas.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-    <!-- ***** Slideshow Background **************************************** -->
-    <script>
-    $.vegas('slideshow', {
-      delay:5000,
-      backgrounds:[
-        { src:'./img/back1.jpg', fade:2000},
-        { src:'./img/back3.jpg', fade:2000 },
-        { src:'./img/back5.jpg', fade:2000 },
-        { src:'./img/back6.jpg', fade:2000 },
-        { src:'./img/back7.jpg', fade:2000 },
-        { src:'./img/back8.jpg', fade:2000 },
-      ]
-    })
-    ('overlay', {
-      src:'./img/overlay2.png'
-    });
-    </script>
-    <!-- ***** /Slideshow Background *************************************** -->
-
-    <!-- ***** Mixitup: Grid *********************************************** -->
-    <script>
-    $(function(){
-      $('#Grid').mixitup();
-    });
-    </script>
-    <!-- ***** /Mixitup: Grid ********************************************** -->
-
-    <!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+<!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         || location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
 
-    <!-- ***** Navbar ****************************************************** -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('#nav').scrollToFixed();
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
     });
-    </script>
-    <!-- ***** /Navbar ***************************************************** -->
-  </body>
+  });
+</script>
+
+<!-- Javascripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
