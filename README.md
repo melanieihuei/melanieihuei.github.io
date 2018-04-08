@@ -1,2 +1,3 @@
-# I-Huei! Melanie!
-Introduction to I-Huei Ho, see more details at the [website](https://melanieihuei.github.io/).
+# I-Huei, also Melanie.
+
+This repository provides a personal website of I-Huei Ho, visit [here](https://melanieihuei.github.io/).
